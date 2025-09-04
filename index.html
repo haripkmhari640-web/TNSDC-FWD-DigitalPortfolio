@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hari G · Portfolio</title>
+  <meta name="description" content="Portfolio of Hari G — projects, skills, resume and contact." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Hari G",
+      "jobTitle": "Computer Science Student",
+      "worksFor": {"@type":"CollegeOrUniversity","name":"Thiruvalluvar University"}
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">
+        <div class="mark">⚡</div>
+        <div class="name">Hari G</div>
+      </div>
+      <nav class="links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button id="themeBtn" class="theme-toggle" title="Toggle theme" aria-label="Toggle theme">🌓</button>
+        <a class="btn" href="#contact">Hire Me</a>
+        <a class="btn primary" href="resume.pdf" download>Download CV</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="card hero-card reveal">
+          <span class="badge">🔭 Open to internships</span>
+          <h1>Hello, I’m <span class="name-gradient">Hari G</span>.<br> I build clean, usable web experiences.</h1>
+          <p class="subtitle">Computer Science undergraduate passionate about front-end engineering, UI design, and problem solving.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#projects">View Projects</a>
+            <a class="btn" href="#contact">Let’s Talk</a>
+          </div>
+          <div class="hint" style="margin-top:10px">Tip: replace text, add your links, and drop a square image named <code>hero.jpg</code> into this folder.</div>
+        </div>
+        <div class="card hero-media reveal">
+          <div class="portrait">
+            <img src="https://i.postimg.cc/P5qB1MWM/IMG-20250830-135422.jpg" alt="Hari G portrait" onerror="this.style.display='none'; this.parentNode.querySelector('span').style.display='block'">
+            <span style="display:none">Upload <strong>hero.jpg</strong> (square)</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about reveal">
+      <div class="section-head">
+        <div class="title">About</div>
+        <div class="pill">📍 India <span class="dot">•</span> 🎓 Computer Science</div>
+      </div>
+      <div class="card" style="padding:18px">
+        <p>Hi! I’m Hari, a CS student at Thiruvalluvar University focused on web development. I love crafting fast, accessible interfaces and tinkering with modern JavaScript frameworks. Beyond code, I enjoy hackathons, open-source, and mentoring peers.</p>
+      </div>
+    </section>
+
+    <section id="skills" class="reveal">
+      <div class="section-head">
+        <div class="title">Skills</div>
+        <div class="hint">Edit levels in the HTML data attributes.</div>
+      </div>
+      <div class="grid cols-3">
+        <div class="card skill" data-level="92">
+          <h4>HTML & Accessibility</h4>
+          <div class="meter"><i></i></div>
+        </div>
+        <div class="card skill" data-level="88">
+          <h4>CSS / Tailwind</h4>
+          <div class="meter"><i></i></div>
+        </div>
+        <div class="card skill" data-level="84">
+          <h4>JavaScript (ES6+)</h4>
+          <div class="meter"><i></i></div>
+        </div>
+        <div class="card skill" data-level="78">
+          <h4>React</h4>
+          <div class="meter"><i></i></div>
+        </div>
+        <div class="card skill" data-level="72">
+          <h4>Node.js</h4>
+          <div class="meter"><i></i></div>
+        </div>
+        <div class="card skill" data-level="70">
+          <h4>SQL / MongoDB</h4>
+          <div class="meter"><i></i></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="reveal">
+      <div class="section-head">
+        <div class="title">Projects</div>
+        <a class="btn" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+      <div class="grid cols-2">
+        <article class="card project">
+          <img src="project-1.jpg" alt="Screenshot of TaskFlow app" loading="lazy" />
+          <div>
+            <h3>TaskFlow — Minimal To-Do App</h3>
+            <p class="subtitle">A sleek task manager with keyboard shortcuts, offline storage, and drag-and-drop lists.</p>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span>
+            </div>
+            <p><a class="btn" href="#">Live Demo</a> <a class="btn" href="#">Source</a></p>
+          </div>
+        </article>
+        <article class="card project">
+          <img src="project-2.jpg" alt="Screenshot of Portfolio site" loading="lazy" />
+          <div>
+            <h3>Devfolio — Portfolio Template</h3>
+            <p class="subtitle">Responsive, accessible portfolio starter with dark mode and SEO best practices.</p>
+            <div class="tags">
+              <span class="tag">HTML</span><span class="tag">SCSS</span><span class="tag">Vite</span>
+            </div>
+            <p><a class="btn" href="#">Live Demo</a> <a class="btn" href="#">Source</a></p>
+          </div>
+        </article>
+      </div>
+      <div class="hint" style="margin-top:8px">Replace <code>project-*.jpg</code> with your screenshots and update links.</div>
+    </section>
+
+    <section id="timeline" class="reveal">
+      <div class="section-head"><div class="title">Timeline</div></div>
+      <div class="card" style="padding:14px">
+        <div class="timeline">
+          <div class="t-item">
+            <h4>Computer Science — B.Sc.</h4>
+            <div class="meta">Thiruvalluvar University · 2024 — 2027</div>
+            <p>Relevant coursework: Data Structures, Web Tech, DBMS, OOP.</p>
+          </div>
+          <div class="t-item">
+            <h4>Web Developer Intern</h4>
+            <div class="meta">Startup • Remote · Summer 2025</div>
+            <p>Built responsive components, improved Lighthouse score from 72 → 93.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="reveal">
+      <div class="section-head"><div class="title">Contact</div></div>
+      <div class="grid cols-2">
+        <div class="card" style="padding:18px">
+          <form id="contactForm" novalidate>
+            <label>
+              <span>Name</span>
+              <input name="name" placeholder="Your name" required />
+            </label>
+            <label>
+              <span>Email</span>
+              <input name="email" type="email" placeholder="you@example.com" required />
+            </label>
+            <label>
+              <span>Message</span>
+              <textarea name="message" placeholder="Say hello…" required></textarea>
+            </label>
+            <button class="btn primary" type="submit">Send Message</button>
+            <p class="hint">This demo uses client-side validation only. Hook it to your backend or Formspree.</p>
+          </form>
+        </div>
+        <div class="card" style="padding:18px">
+          <h3>Let’s connect</h3>
+          <p class="subtitle">I’m currently exploring internship opportunities and collaborations.</p>
+          <p>
+            <a class="pill" href="mailto:you@example.com">✉️ you@example.com</a>
+          </p>
+          <p class="subtitle">Social</p>
+          <p>
+            <a class="pill" href="#">🐙 GitHub</a>
+            <a class="pill" href="#">💼 LinkedIn</a>
+            <a class="pill" href="#">𝕏 Twitter</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© <span id="year"></span> Hari G — Built with vanilla HTML/CSS/JS.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
